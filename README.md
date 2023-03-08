@@ -1,11 +1,11 @@
 # MicroServiceExampleSelling
- ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
+ Project contains ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
  
  
  
  
 
-       ----------------------------------------- API Gateway -------------------------------------------
+       #----------------------------------------- API Gateway -------------------------------------------
 
          -> Microservice mimarisiyle tasarlanan uygulamalarda clientların parçalı servislere doğrudan erişerek karmaşıklığın ve daha da önemlisi güvenlik ile ilgili 
              risklerin meydana gelmesini engellemek için bir cephe misali öncü görevi gören API yapılanmasıdır.
