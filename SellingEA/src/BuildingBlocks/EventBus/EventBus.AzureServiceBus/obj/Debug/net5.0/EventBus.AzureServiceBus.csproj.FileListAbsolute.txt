@@ -1,0 +1,15 @@
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\bin\Debug\net5.0\EventBus.AzureServiceBus.deps.json
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\bin\Debug\net5.0\EventBus.AzureServiceBus.dll
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\bin\Debug\net5.0\EventBus.AzureServiceBus.pdb
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\bin\Debug\net5.0\EventBus.Base.dll
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\bin\Debug\net5.0\EventBus.Base.pdb
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.csproj.AssemblyReference.cache
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.AssemblyInfoInputs.cache
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.AssemblyInfo.cs
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.csproj.CoreCompileInputs.cache
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.csproj.CopyComplete
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.dll
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\refint\EventBus.AzureServiceBus.dll
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\EventBus.AzureServiceBus.pdb
+C:\MicroService\SellingEA\src\BuildingBlocks\EventBus\EventBus.AzureServiceBus\obj\Debug\net5.0\ref\EventBus.AzureServiceBus.dll

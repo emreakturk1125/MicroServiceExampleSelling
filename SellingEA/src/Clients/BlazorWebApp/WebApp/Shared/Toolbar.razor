@@ -1,0 +1,88 @@
+﻿@if (isLoggedIn)
+{
+    <a href="basket" class="ml-md-auto"> @identityService.GetUserName() - Basket (@basketItemCount) </a>
+    <a class="ml-md-auto" @onclick=@GoLogoutPage>Logout</a>
+}
+else
+{
+    <a class="ml-md-auto" @onclick=@GoLoginPage>Login</a>
+}
+
+
+
+@code 
+{
+    [Inject]
+    IBasketService basketService { get; set; }
+
+    [Inject]
+    IIdentityService identityService { get; set; }
+
+    [Inject]
+    AppStateManager appState { get; set; }
+
+    [Inject]
+    NavigationManager navigationManager { get; set; }
+
+
+    private int basketItemCount = 0;
+
+    bool isLoggedIn = false;
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+            appState.StateChanged += async (source, property) => await AppState_StateChanged(source, property);
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await calculateItemCount();
+    }
+
+    private async Task<int> calculateItemCount()
+    {
+        isLoggedIn = identityService.IsLoggedIn;
+        
+        if (!isLoggedIn)
+            return 0;
+
+        var basket = await basketService.GetBasket();
+        var count = basket.Items == null ? 0 : basket.Items.Sum(i => i.Quantity);
+        
+        basketItemCount = count;
+
+        return count;
+    }
+
+    private async Task AppState_StateChanged(ComponentBase source, string property)
+    {
+        if (source == this)
+            return;
+
+        if (property == "increase")
+        {
+            basketItemCount++;
+        }
+        else if (property == "updatebasket")
+        {
+            await calculateItemCount();
+        }
+        else if (property == "login")
+        {
+            await calculateItemCount();
+        }
+
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void GoLoginPage()
+    {
+        navigationManager.NavigateTo($"login?returnUrl={Uri.EscapeDataString(navigationManager.Uri)}", false);
+    }
+
+    private void GoLogoutPage()
+    {
+        navigationManager.NavigateTo($"logout?returnUrl={Uri.EscapeDataString(navigationManager.Uri)}", false);
+    }
+}

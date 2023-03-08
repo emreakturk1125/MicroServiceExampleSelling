@@ -1,0 +1,92 @@
+﻿
+**********************************************************************************************  UYGULAMAYI ÇALIŞTIRMADAN ÖNCE YAPMAN GEREKENLER  ***************************************************************************************************
+
+######  Localimde Consul çalıştırmak için;
+
+ -> "C:\Users\emre.akturk\Downloads\consul_1.14.1_windows_386"  cmd de aç ve "consul agent --dev"  çalıştırdıktan sonra   http://localhost:8500/ui/dc1/services üzerinden girebilirin
+   ve çalışan servisleri görebilirsin
+
+
+###### Docker üzerinde redisi çalıştırmak için; cmd aç ve alttaki komutları yaz
+
+ -> docker ps
+ -> docker exec -it febe154bc5f3 sh
+ # redis-cli
+  127.0.0.1:6379> ping
+   PONG
+  127.0.0.1:6379>
+
+  bu seviye de olman gerekir
+
+  YA DA
+
+  Docker desktop üzerinden çalıştırabilirsin
+
+  ######  RabbitMQ
+
+  http://localhost:15672/#/
+   
+ *************************************************************************************************************************************************************************************************  
+   
+   Microservice Mimarilerinde Consul ile Service Discovery
+ ---------------------------------------------------------------
+
+->  https://www.gokhan-gokalp.com/en/microservice-mimarilerinde-consul-ile-service-discovery/  
+->  https://medium.com/i%CC%87yi-programlama/microservice-mimarilerinde-service-discovery-7a6ebceb1b2a
+->  https://medium.com/@selcukusta/consul-i%CC%87le-service-discovery-d%C3%BCnyas%C4%B1na-bak%C4%B1%C5%9F-60d81c06a45d
+  
+
+
+ UnitTest
+ ****************
+ 
+ 
+ ApiGateway
+*******************
+
+-> Ocelot Configurasyonu
+
+
+    EventBus (Service Bus) Mimarisi, Microservis mimarisinde, servisler arası haberleşme için Azure ve RabbitMQ implementasyonu yapıldı
+*******************
+
+ ->  RabbitMQ 
+ ->  Azure Service Bus implementation
+
+
+     Tools
+*******************
+
+-> RabbitMQ (Açmak için "RabbitMQ Command Prompt"  açıp, "rabbitmq-plugins enable rabbitmq_management" yaz)
+-> Azure Service Bus
+-> Redis    (BasketService de docker üzerinden ayağa kaldırılacak)
+-> Sql Server
+-> Blazor WASM
+-> .NET5
+-> EF5
+-> GrayLog (Merkezi Log Sistemi)
+-> Docker  
+
+
+    Patterns
+*******************
+
+-> DDD
+-> CQRS
+-> Mediator
+-> HTTP  Aggregation
+-> JWT
+-> HealthCheck
+
+-------------------------------------------------------------------------------------------------------
+
+
+ -> Blazor Web App  
+   
+ -> OrderService  kullanılanlar
+---------------------
+
+-> Onion Architecture
+-> Domain Driven Design (OrderService içindeki her bir App Domain temsil eder)  pattern e göre disagn edildi
+-> CQRS Pattern
+-> Mediatr Pattern

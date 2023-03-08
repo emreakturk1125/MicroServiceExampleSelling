@@ -1,0 +1,12 @@
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.deps.json
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.csproj.AssemblyReference.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.AssemblyInfoInputs.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.AssemblyInfo.cs
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.csproj.CoreCompileInputs.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\refint\OrderService.Domain.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\ref\OrderService.Domain.dll

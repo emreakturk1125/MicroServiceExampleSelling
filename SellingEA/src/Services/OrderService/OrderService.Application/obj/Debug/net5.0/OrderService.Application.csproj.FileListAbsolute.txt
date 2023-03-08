@@ -1,0 +1,17 @@
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\OrderService.Application.deps.json
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\OrderService.Application.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\OrderService.Application.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\EventBus.Base.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\OrderService.Domain.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\EventBus.Base.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\bin\Debug\net5.0\OrderService.Domain.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.csproj.AssemblyReference.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.AssemblyInfoInputs.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.AssemblyInfo.cs
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.csproj.CoreCompileInputs.cache
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.csproj.CopyComplete
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\refint\OrderService.Application.dll
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\OrderService.Application.pdb
+C:\MicroService\SellingEA\src\Services\OrderService\OrderService.Application\obj\Debug\net5.0\ref\OrderService.Application.dll

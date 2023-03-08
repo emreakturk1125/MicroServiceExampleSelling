@@ -1,0 +1,649 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj",
+        "projectName": "EventBus.RabbitMQ",
+        "projectPath": "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj",
+        "projectName": "EventBus.AzureServiceBus",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
+        "projectName": "EventBus.Base",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj",
+        "projectName": "EventBus.Factory",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
+        "projectName": "OrderService.Api",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\OrderService.Infrastructure.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\OrderService.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.6.10.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.25.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Graylog": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj",
+        "projectName": "OrderService.Application",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj",
+        "projectName": "OrderService.Domain",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\OrderService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\OrderService.Infrastructure.csproj",
+        "projectName": "OrderService.Infrastructure",
+        "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\OrderService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj"
+              },
+              "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj": {
+                "projectPath": "C:\\MicroService\\SellingEA\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

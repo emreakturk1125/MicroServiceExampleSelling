@@ -1,0 +1,15 @@
+C:\MicroService\SellingEA\EventBus.RabbitMQ\bin\Debug\net5.0\EventBus.RabbitMQ.deps.json
+C:\MicroService\SellingEA\EventBus.RabbitMQ\bin\Debug\net5.0\EventBus.RabbitMQ.dll
+C:\MicroService\SellingEA\EventBus.RabbitMQ\bin\Debug\net5.0\EventBus.RabbitMQ.pdb
+C:\MicroService\SellingEA\EventBus.RabbitMQ\bin\Debug\net5.0\EventBus.Base.dll
+C:\MicroService\SellingEA\EventBus.RabbitMQ\bin\Debug\net5.0\EventBus.Base.pdb
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.csproj.AssemblyReference.cache
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.AssemblyInfoInputs.cache
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.AssemblyInfo.cs
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.csproj.CoreCompileInputs.cache
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.csproj.CopyComplete
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.dll
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\refint\EventBus.RabbitMQ.dll
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\EventBus.RabbitMQ.pdb
+C:\MicroService\SellingEA\EventBus.RabbitMQ\obj\Debug\net5.0\ref\EventBus.RabbitMQ.dll

@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MicroService\\SellingEA\\EventBus.UnitTest\\EventBus.UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\MicroService\\SellingEA\\EventBus.UnitTest\\EventBus.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MicroService\\SellingEA\\EventBus.UnitTest\\EventBus.UnitTest.csproj",
+        "projectName": "NotificationService",
+        "projectPath": "C:\\MicroService\\SellingEA\\EventBus.UnitTest\\EventBus.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\emre.akturk\\.nuget\\packages\\",
+        "outputPath": "C:\\MicroService\\SellingEA\\src\\Services\\NotificationService\\NotificationService\\NotificationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emre.akturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj": {
+                "projectPath": "C:\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj"
+              },
+              "C:\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj": {
+                "projectPath": "C:\\BuildingBlocks\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
