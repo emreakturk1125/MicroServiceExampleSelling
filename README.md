@@ -1,71 +1,68 @@
 # MicroServiceExampleSelling
 ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
  
+# API Gateway
+
+ -> Microservice mimarisiyle tasarlanan uygulamalarda clientların parçalı servislere doğrudan erişerek karmaşıklığın ve daha da önemlisi güvenlik ile ilgili risklerin meydana gelmesini engellemek için bir cephe misali öncü görevi gören API yapılanmasıdır.<br>
+ -> Clientlar bu API üzerinden güvenlik ve yetkilendirme kontrollerinden geçerler ve hedefteki microservice’i API Gateway aracılığıyla tetikleyerek sonuç alırlar.<br>
+ -> API Gateway, client ile sıkı bağlı(tightly coupled) bir bağlıdır.<br>
  
- #Microservis Mimarisinin Bazı Öğeleri Hakkında Bilgileri
+ # API Gateway İle Neler Yapılabilir? 
  
-       ----------------------------------------- **API Gateway** -------------------------------------------
+  -> Authentication ve Authorization<br>
+         
+    İşlevsel sorumluluğu parça parça üstlenen servislere erişim api gateway üzerinden dolaylı yolla olacağından dolayı kimlik ve yetki doğrulama operasyonlarını sadece api gateway’de yapılandırılabilir.
+         
+  -> Logging<br>
+         
+   Servislere yapılan istekler hakkında detaylı loglamalar gerçekleştirilebilir ve böylece hangi servis, kim tarafından, ne kadar yoğunlukta işlevsellik gösteriyor vs. gibi istatistiksel bilgiler edinilebilir.
+         
+  -> Response Caching<br>
+         
+   API gateway üzerinden servislere gelen talepler neticesinde üretilen çıktıları cacheleyebilir ve böylece servis maliyetleri düşürülebilir.
+         
+   -> Routing<br>
+         
+   Servislerin adreslerini farklı şekilde kapsüllenebilir ve bu kapsül üzerinden clientlar ilgili esas routelara yönlendirilebilir.
+ 
+ # Avantajları
+    -> Birden fazla servis tarafından üretilecek olan datayı tek bir request – response ile üretilmesini sağlar<br>
+    -> Authentication, authorization, logging, security, routing vs. gibi<br>
+    -> Clientları, uygulamanın microservislere nasıl bölündüğü hususunda düşünmekten izole eder.<br>
+    
+ # Dezavantajları
+ 
+     -> Tüm servislere erişim api gateway üzerinden olduğu için herhangi bir çöküntü yahut kesinti durumunda tüm sistem aksaklığa uğrayabilir.
+    
+ # Ocelot API Gateway 
+ 
+ 
+  -> Açık kaynakdır.<br>
+         -> Clientlardan gelen istekleri işlevsel açıdan uygun servislere yönlendirmekten sorumlu bir geçiş görevi gören API Gateway kütüphanesidir.<br>
+         -> Ocelot aşağıdaki gibi birçok yeteneğe sahip olan bir kütüphanedir.<br>
 
-         -> Microservice mimarisiyle tasarlanan uygulamalarda clientların parçalı servislere doğrudan erişerek karmaşıklığın ve daha da önemlisi güvenlik ile ilgili 
-             risklerin meydana gelmesini engellemek için bir cephe misali öncü görevi gören API yapılanmasıdır.
-         -> Clientlar bu API üzerinden güvenlik ve yetkilendirme kontrollerinden geçerler ve hedefteki microservice’i API Gateway aracılığıyla tetikleyerek sonuç alırlar.
-         -> API Gateway, client ile sıkı bağlı(tightly coupled) bir bağlıdır.
-         
-       ------  #API Gateway İle Neler Yapılabilir?  ------
-         
-         -> Authentication ve Authorization
-         
-         İşlevsel sorumluluğu parça parça üstlenen servislere erişim api gateway üzerinden dolaylı yolla olacağından dolayı kimlik ve yetki doğrulama operasyonlarını sadece api gateway’de yapılandırılabilir.
-         
-         -> Logging
-         
-         Servislere yapılan istekler hakkında detaylı loglamalar gerçekleştirilebilir ve böylece hangi servis, kim tarafından, ne kadar yoğunlukta işlevsellik gösteriyor vs. gibi istatistiksel bilgiler edinilebilir.
-         
-         -> Response Caching
-         
-         API gateway üzerinden servislere gelen talepler neticesinde üretilen çıktıları cacheleyebilir ve böylece servis maliyetleri düşürülebilir.
-         
-         -> Routing
-         
-         Servislerin adreslerini farklı şekilde kapsüllenebilir ve bu kapsül üzerinden clientlar ilgili esas routelara yönlendirilebilir.
+               * Routing<br>
+               * Request Aggregation<br>
+               * Service Discovery with Consul & Eureka<br>
+               * Service Fabric<br>
+               * Kubernetes<br>
+               * WebSockets<br>
+               * Authentication<br>
+               * Authorisation<br>
+               * Rate Limiting<br>
+               * Caching<br>
+               * Retry policies / QoS<br>
+               * Load Balancing<br>
+               * Logging / Tracing / Correlation<br>
+               * Headers / Method / Query String / Claims Transformation<br>
+               * Custom Middleware / Delegating Handlers<br>
+               * Configuration / Administration REST API<br>
+               * Platform / Cloud Agnostic<br>
+ 
+ 
+ # Microservice Mimarilerinde Consul ile Service Discovery 
 
-    ------ Avantajları -------
-
-         -> Birden fazla servis tarafından üretilecek olan datayı tek bir request – response ile üretilmesini sağlar
-         -> Authentication, authorization, logging, security, routing vs. gibi
-         -> Clientları, uygulamanın microservislere nasıl bölündüğü hususunda düşünmekten izole eder.
-         
-    ----- Dezavantajları ------
-         
-         -> Tüm servislere erişim api gateway üzerinden olduğu için herhangi bir çöküntü yahut kesinti durumunda tüm sistem aksaklığa uğrayabilir.
-
-    ----------------------------------------- #Ocelot API Gateway -----------------------------------------
-
-         -> Açık kaynakdır.
-         -> Clientlardan gelen istekleri işlevsel açıdan uygun servislere yönlendirmekten sorumlu bir geçiş görevi gören API Gateway kütüphanesidir.
-         -> Ocelot aşağıdaki gibi birçok yeteneğe sahip olan bir kütüphanedir.
-
-               * Routing
-               * Request Aggregation
-               * Service Discovery with Consul & Eureka
-               * Service Fabric
-               * Kubernetes
-               * WebSockets
-               * Authentication
-               * Authorisation
-               * Rate Limiting
-               * Caching
-               * Retry policies / QoS
-               * Load Balancing
-               * Logging / Tracing / Correlation
-               * Headers / Method / Query String / Claims Transformation
-               * Custom Middleware / Delegating Handlers
-               * Configuration / Administration REST API
-               * Platform / Cloud Agnostic
-
-  ----------------------- #Microservice Mimarilerinde Consul ile Service Discovery -------------------------
-
-  ----  #Service Discovery -----
+ # Service Discovery 
 
  -> Microservice mimarisinde servisleriniz çok dinamik bir yapıya sahiptir. 
     Mesela uygulamaya gelen isteklerin yoğunluğuna göre bazı microservislerinizi scale out etmeniz yani var olan instance sayısını artırmanız gerekebilir.
@@ -73,7 +70,7 @@ ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
     Bu yüzden daha ayrıntılı bir yapıya ihtiyacımız var.Bu yapıya Service Discovery diyoruz.
 
 
----------- #Consul Nedir ------------
+# Consul Nedir
 
 -> Consul, kapsamlı bir service discovery aracıdır.
 -> Default olarak 8500 portu üzerinden çalışır
@@ -85,7 +82,7 @@ ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
    Bu yüzden daha ayrıntılı bir yapıya ihtiyacımız var.Bu yapıya Service Discovery diyoruz.
 
 
-   Service discovery  temel olarak üç kavram üzerinde durmaktadır:
+#   Service discovery  temel olarak üç kavram üzerinde durmaktadır:
    --------------------------------------------------------------
     Discovery: Service’lerin dynamic bir ortamda cluster içerisindeki diğer service’ler ile iletişim kurabilmeleri için, birbirlerinin IP ve port bilgilerini bulmaya ihtiyaçları vardır. Discovery ise bunu sağlamaktadır.
     Health check: Health check işlemi ile sadece up olan service’lerin sistemde kalmaları, down olan’ların ise dynamic bir şekilde sistem dışı kalmaları sağlanmaktadır.
@@ -96,17 +93,14 @@ ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
    Service discovery ise bu gibi durumları nasıl otomatik olarak handle edebilirize odaklanmaktadır.
 
    
-  ----------------------- #Domain Driven Design Nedir -------------------------
+# Domain Driven Design Nedir 
 
   -> Karmaşık projelerin hayata geçirilmesinde sıklıkla karşılaşılan temel sorunlara çözüm bulmaya çalışan bir yaklaşımdır.
 
-  Kavramlar;
+# Kavramlar;
   -----------
-  * 
-
-  
-  ----------------------- Onion Architecture Nedir -------------------------
-
+   
+# Onion Architecture Nedir
 
   -> Onion mimarisi, N-tier katmanlı mimarinin ileride yaşatacağı sorunları çözmeyi sunmaktadır.
   Onion ile oyunun kurallarını değiştiren şey, Domain Layer (tabiri caizse soğan’ın cücüğü) Entity’lerin Tüm Uygulamanın Merkezinde olmasıdır.
@@ -128,14 +122,16 @@ Altyapı katmanı’nın bir parçası olduğunu görmekteyiz. Persistance katma
 * Presentation
 Sunum katmanı olan bu alanda projenin hangi platformda sunulacağı barınır. Örneğin Web, Api, Console vs…
 
------------------------ #Clean Architecture Nedir -------------------------
+# Clean Architecture Nedir 
 
 Hexogonal ve Onion mimarileri ile ayrıntılarında biraz farklılık gösterseler de, birbirlerine çok benziyorlar. Çünkü bu mimariler temelde aynı amaca hizmet eder yani işlerimiz katmanlara ayırmamıza.
 
-
-
------------------------ #Mediatr Kütüphanesi -------------------------
+# Mediatr Kütüphanesi 
 
 Mediator pattern’den de kısaca bahsedecek olursak; aynı arayüz üzerinden türeyen nesneler arasındaki iletişimi, tek bir nokta üzerinden sağlamaya dayalı bir pattern’dir.İletişimi tek bir sınıf(Mediator) üzerinden
 sağladığı için gevşek bağlılık sağlar.Bu konuda en çok verilen örnek uçak ve kule örneğidir.Uçakların hepsi kule ile iletişime geçer, birbirleriyle doğrudan iletişime geçmezler.Bu örnekte, Mediator nesnesi kule,
-uçaklarda türeyen sınıflardır diyebiliriz.
+uçaklarda türeyen sınıflardır diyebiliriz. 
+ 
+ 
+ 
+ 
