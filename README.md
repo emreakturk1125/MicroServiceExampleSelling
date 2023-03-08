@@ -1,18 +1,17 @@
 # MicroServiceExampleSelling
- Project contains ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
+ApiGateway, Consul, EventBus, Docker, Domain Driven Design, Onion Architecture
  
  
+ #Microservis Mimarisinin Bazı Öğeleri Hakkında Bilgileri
  
- 
-
-       #----------------------------------------- API Gateway -------------------------------------------
+       ----------------------------------------- #API Gateway -------------------------------------------
 
          -> Microservice mimarisiyle tasarlanan uygulamalarda clientların parçalı servislere doğrudan erişerek karmaşıklığın ve daha da önemlisi güvenlik ile ilgili 
              risklerin meydana gelmesini engellemek için bir cephe misali öncü görevi gören API yapılanmasıdır.
          -> Clientlar bu API üzerinden güvenlik ve yetkilendirme kontrollerinden geçerler ve hedefteki microservice’i API Gateway aracılığıyla tetikleyerek sonuç alırlar.
          -> API Gateway, client ile sıkı bağlı(tightly coupled) bir bağlıdır.
          
-                ------  API Gateway İle Neler Yapılabilir?  ------
+       ------  #API Gateway İle Neler Yapılabilir?  ------
          
          -> Authentication ve Authorization
          
@@ -40,7 +39,7 @@
          
          -> Tüm servislere erişim api gateway üzerinden olduğu için herhangi bir çöküntü yahut kesinti durumunda tüm sistem aksaklığa uğrayabilir.
 
-    ----------------------------------------- Ocelot API Gateway -----------------------------------------
+    ----------------------------------------- #Ocelot API Gateway -----------------------------------------
 
          -> Açık kaynakdır.
          -> Clientlardan gelen istekleri işlevsel açıdan uygun servislere yönlendirmekten sorumlu bir geçiş görevi gören API Gateway kütüphanesidir.
@@ -64,9 +63,9 @@
                * Configuration / Administration REST API
                * Platform / Cloud Agnostic
 
-  ----------------------- Microservice Mimarilerinde Consul ile Service Discovery -------------------------
+  ----------------------- #Microservice Mimarilerinde Consul ile Service Discovery -------------------------
 
-  ----  Service Discovery -----
+  ----  #Service Discovery -----
 
  -> Microservice mimarisinde servisleriniz çok dinamik bir yapıya sahiptir. 
     Mesela uygulamaya gelen isteklerin yoğunluğuna göre bazı microservislerinizi scale out etmeniz yani var olan instance sayısını artırmanız gerekebilir.
@@ -74,7 +73,7 @@
     Bu yüzden daha ayrıntılı bir yapıya ihtiyacımız var.Bu yapıya Service Discovery diyoruz.
 
 
----------- Consul Nedir ------------
+---------- #Consul Nedir ------------
 
 -> Consul, kapsamlı bir service discovery aracıdır.
 -> Default olarak 8500 portu üzerinden çalışır
@@ -97,7 +96,7 @@
    Service discovery ise bu gibi durumları nasıl otomatik olarak handle edebilirize odaklanmaktadır.
 
    
-  ----------------------- Domain Driven Design Nedir -------------------------
+  ----------------------- #Domain Driven Design Nedir -------------------------
 
   -> Karmaşık projelerin hayata geçirilmesinde sıklıkla karşılaşılan temel sorunlara çözüm bulmaya çalışan bir yaklaşımdır.
 
@@ -129,13 +128,13 @@ Altyapı katmanı’nın bir parçası olduğunu görmekteyiz. Persistance katma
 * Presentation
 Sunum katmanı olan bu alanda projenin hangi platformda sunulacağı barınır. Örneğin Web, Api, Console vs…
 
------------------------ Clean Architecture Nedir -------------------------
+----------------------- #Clean Architecture Nedir -------------------------
 
 Hexogonal ve Onion mimarileri ile ayrıntılarında biraz farklılık gösterseler de, birbirlerine çok benziyorlar. Çünkü bu mimariler temelde aynı amaca hizmet eder yani işlerimiz katmanlara ayırmamıza.
 
 
 
------------------------ Mediatr Kütüphanesi -------------------------
+----------------------- #Mediatr Kütüphanesi -------------------------
 
 Mediator pattern’den de kısaca bahsedecek olursak; aynı arayüz üzerinden türeyen nesneler arasındaki iletişimi, tek bir nokta üzerinden sağlamaya dayalı bir pattern’dir.İletişimi tek bir sınıf(Mediator) üzerinden
 sağladığı için gevşek bağlılık sağlar.Bu konuda en çok verilen örnek uçak ve kule örneğidir.Uçakların hepsi kule ile iletişime geçer, birbirleriyle doğrudan iletişime geçmezler.Bu örnekte, Mediator nesnesi kule,
